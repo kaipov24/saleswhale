@@ -1,0 +1,17 @@
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+.team__item {
+  height: 307px;
+  width: 180px;
+  border: 1px solid #E4E7EC;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.team__image {
+  height: 36px;
+  width: 36px;
+}

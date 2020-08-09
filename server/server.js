@@ -10,6 +10,10 @@ import cookieParser from 'cookie-parser'
 import config from './config'
 import Html from '../client/html'
 
+const teams = require('./teams')
+const activities = require('./activity')
+const users = require('./user')
+
 const Root = () => ''
 
 try {
@@ -40,6 +44,21 @@ const middleware = [
 ]
 
 middleware.forEach((it) => server.use(it))
+
+server.get('/api/v1/teams', (req, res) => {
+  res.json(teams)
+})
+
+server.get('/api/v1/activities', (req, res) => {
+  res.json(activities)
+})
+
+
+server.get('/api/v1/users', (req, res) => {
+  res.json(users)
+})
+
+
 
 server.use('/api/', (req, res) => {
   res.status(404)
