@@ -174,7 +174,7 @@ const config = {
   plugins: [
     new webpack.optimize.ModuleConcatenationPlugin(),
     new MiniCssExtractPlugin({
-      // filename: 'css/main.css',
+      filename: 'css/main.css',
       chunkFilename: 'css/[id].css',
       ignoreOrder: false
     }),
