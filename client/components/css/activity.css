@@ -1,0 +1,39 @@
+.activity__header{
+  font-size: 18px;
+  line-height: 22px;
+  color: #343434;
+  padding: 29px;
+  border-bottom: 1px solid #EFEFEF;
+}
+
+.activity__item{
+  padding-left: 30px;
+  padding-top: 25px;
+  display: flex;
+}
+.activity__item:last-child{
+  padding-bottom: 25px;
+}
+.activity__descr{
+  font-size: 14px;
+  line-height: 17px;
+  color: #444444;
+  width: 55%;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+.activity__avatar {
+  width: 36px;
+  height: 36px;
+}
+.activity__time {
+  font-size: 13px;
+  line-height: 16px;
+  color: #565656;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.activity__time {
+  margin-top: 5px;
+}

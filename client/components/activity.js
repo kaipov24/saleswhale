@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useSelector } from 'react-redux'
+import './css/activity.css'
 
 const Activity = () => {
   const activities = useSelector((s) => s.teams.activities)
@@ -8,18 +9,21 @@ const Activity = () => {
 
   useEffect(() => {
     setActiv(activities)
-  }, [activities])     
+  }, [activities])
 
   return (
-    <div>
-      {activ.map((team) => {
+    <div className="activity__inner">
+      <div className="activity__header">Activity</div>
+      {activ.map((activity) => {
         return (
-          <div
-            key={team}
-            className="max-w-sm bg-indigo-100 rounded overflow-hidden shadow-lg w-84 p-2 m-4"
-          >
-            <div className="justify-center inline-block rounded-full px-3 py-1 text-sm font-semibold text-black-700 mr-2 card__title">
-              {team.person.name}{' '}yrdfsdf
+          <div key={activity} className="activity__item">
+            <div className="activity__avatar">
+              <img src={`images/${activity.person.name}.png`} alt="" />
+            </div>
+            <div className="activity__descr">
+              <b>{activity.person.name}</b> {activity.action.split('_').join(' ')}{' '}
+              <strong>{activity.target}</strong>
+              <div className="activity__time">{activity.created_at}</div>
             </div>
           </div>
         )

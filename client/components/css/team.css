@@ -1,17 +1,219 @@
-.body {
-  margin: 0;
-  padding: 0;
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 50px;
 }
 
+.teams__wrapper{
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.05), 0px 0px 30px rgba(0, 0, 0, 0.1);
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-right: 10px;
+  margin-left: 60px;
+  max-width: 65%;
+}
+.teams__header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #EFEFEF;
+}
+.teams__title {
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.teams__info{
+  font-size: 14px;
+  line-height: 17px;
+  color: #7F7F7F;
+}
+
+.teams__grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background: #FFFFFF;
+  justify-content: space-between;
+  padding-top: 30px;
+
+}
+.teams__header {
+  padding-top: 28px;
+  padding-bottom: 18px;
+}
 .team__item {
-  height: 307px;
-  width: 180px;
+  width: 307px;
+  height: 180px;
   border: 1px solid #E4E7EC;
   box-sizing: border-box;
   border-radius: 4px;
+  padding: 16px;
+  margin: 15px 15px 15px 0;
+}
+.team__header{
+  display: flex;
+  margin-bottom: 18px;
+  justify-content: space-between;
+
 }
 
+.team__header__info {
+  display: flex;
+}
 .team__image {
   height: 36px;
   width: 36px;
+  margin-right: 8px;
 }
+.team__title {
+  font-size: 16px;
+  line-height: 19px;
+  color: #444444;
+}
+
+.team__date {
+  font-size: 13px;
+  line-height: 16px;
+  color: #565656;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.team__description {
+  font-size: 14px;
+  line-height: 17px;
+  color: #565656;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #E4E7EC;
+}
+.team__campaigns,
+.team__leads {
+  display: flex;
+}
+.team__campaigns__info {
+  padding-left: 6px;
+  padding-bottom: 3px;
+  padding-right: 7px;
+}
+
+.team__stats {
+  display: flex;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.45;
+}
+
+.team__campaigns {
+  margin-right: 7px;
+}
+
+.activity {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.05), 0px 0px 30px rgba(0, 0, 0, 0.1);
+  width: 25%;
+  margin-right: 30px;
+  height: 100%;
+}
+
+
+.buttons__filter {
+  font-size: 18px;
+  line-height: 22px;
+  color: #0083E3;
+  text-decoration: none;
+  margin-left: 2rem;
+  border-radius: 20px;
+
+  position: relative;
+}
+.buttons__filter:after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  z-index: 1;
+  transition: width .2s linear;
+}
+
+.buttons__filter:after:hover{
+  width: 100%;
+}
+/*Intro*/
+
+.intro{
+  background: #FFFFFF;
+  margin-bottom: 42px;
+  -webkit-box-shadow: 0 10px 5px #888888;
+  -moz-box-shadow: 0 10px 5px #888888;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+  padding-left: 50px;
+}
+.intro__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 30px 40px 68px;
+}
+
+.intro__buttons {
+  padding-left: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  padding-right: 45px;
+}
+
+.intro__inner__left{
+  font-size: 30px;
+  line-height: 36px;
+  color: #1A1919;
+
+}
+
+.intro__inner__right {
+  background: #40D2BF;
+  border-radius: 4px;
+  padding: 5px;
+  color: #FFFFFF;
+  display: flex;
+  padding: 10px 15px;
+}
+
+.intro__inner__left {
+  display: flex;
+
+}
+
+.intro__inner__left__icon {
+  margin-right: 12px;
+}
+
+.intro__inner__right__button {
+  margin-left: 20px;
+  font-size: 14px;
+  line-height: 16px;
+}
+/*Input*/
+.input {
+  display: flex;
+}
+.input__field {
+  font-size: 16px;
+  line-height: 19px;
+  color: #999999;
+  margin-left: 11px;
+  max-width: 150px;
+  margin-right: 20px;
+  outline: none;
+}
+.input__button {
+  cursor: pointer;
+}
+
