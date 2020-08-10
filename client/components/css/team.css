@@ -45,7 +45,7 @@
 }
 .team__item {
   width: 307px;
-  height: 180px;
+  height: auto;
   border: 1px solid #E4E7EC;
   box-sizing: border-box;
   border-radius: 4px;
