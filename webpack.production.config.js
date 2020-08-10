@@ -225,7 +225,7 @@ const config = {
       { parallel: 100 }
     ),
     new MiniCssExtractPlugin({
-      filename: 'css/main.css',
+      // filename: 'css/main.css',
       chunkFilename: 'css/[id].css',
       ignoreOrder: false
     }),
