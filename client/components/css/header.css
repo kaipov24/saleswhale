@@ -79,9 +79,11 @@
   width: 80px;
   display: flex;
   justify-content: center;
+  background-color: #042235;
+  transition: background-color .2s linear;
 }
 
-.header__menu__item:hover {
-  color: #ffffff;
-  background: #2995DA;
+
+.header__menu__item:hover{
+  background-color: #2995DA;
 }

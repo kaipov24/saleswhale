@@ -125,26 +125,16 @@
 .buttons__filter {
   font-size: 18px;
   line-height: 22px;
-  color: #0083E3;
+  color: #000000;
   text-decoration: none;
-  margin-left: 2rem;
-  border-radius: 20px;
-
+  padding: 10px;
+  border-bottom: 0px solid #0083E3;
   position: relative;
 }
-.buttons__filter:after {
-  content: "";
-  width: 0px;
-  height: 2px;
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  z-index: 1;
-  transition: width .2s linear;
-}
 
-.buttons__filter:after:hover{
-  width: 100%;
+.buttons__filter:hover{
+  color: #0083E3;
+  border-bottom: 3px solid #0083E3;
 }
 /*Intro*/
 
@@ -166,7 +156,6 @@
   padding-left: 50px;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 15px;
   padding-right: 45px;
 }
 
@@ -199,6 +188,7 @@
   margin-left: 20px;
   font-size: 14px;
   line-height: 16px;
+  cursor: pointer;
 }
 /*Input*/
 .input {

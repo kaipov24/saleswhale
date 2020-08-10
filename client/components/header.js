@@ -31,11 +31,21 @@ const Header = () => {
               </div>
             </div>
             <div className="header__menu">
-              <div className="header__menu__item"><img src="images/sw-logo-white.svg" alt="" /></div>
-              <div className="header__menu__item"><img src="images/icon-campaign.svg" alt="" /></div>
-              <div className="header__menu__item"><img src="images/icon companies.svg" alt="" /></div>
-              <div className="header__menu__item"><img src="images/icon-leads.svg" alt="" /></div>
-              <div className="header__menu__item"><img src="images/icon-reports.svg" alt="" /></div>
+              <div className="header__menu__item">
+                <img className="header__menu__item__icon" src="images/sw-logo-white.svg" alt="" />
+              </div>
+              <div className="header__menu__item">
+                <img className="header__menu__item__icon" src="images/icon-campaign.svg" alt="" />
+              </div>
+              <div className="header__menu__item">
+                <img className="header__menu__item__icon" src="images/icon companies.svg" alt="" />
+              </div>
+              <div className="header__menu__item">
+                <img className="header__menu__item__icon" src="images/icon-leads.svg" alt="" />
+              </div>
+              <div className="header__menu__item">
+                <img className="header__menu__item__icon" src="images/icon-reports.svg" alt="" />
+              </div>
             </div>
           </div>
         )

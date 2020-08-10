@@ -8,7 +8,7 @@ const Teams = () => {
   const favTeams = allTeams.filter((it) => it.is_favorited)
   const archieveTeams = allTeams.filter((it) => it.is_archived)
   const [teams, setTeams] = useState(allTeams)
-
+  const [title, setTitle] = useState('All')
   useEffect(() => {
     setTeams(allTeams)
   }, [allTeams])
@@ -37,6 +37,7 @@ const Teams = () => {
               type="button"
               onClick={() => {
                 setTeams(allTeams)
+                setTitle('All')
               }}
             >
               All Teams
@@ -47,6 +48,7 @@ const Teams = () => {
               type="button"
               onClick={() => {
                 setTeams(favTeams)
+                setTitle('Favourite')
               }}
             >
               Favourite Teams
@@ -56,6 +58,7 @@ const Teams = () => {
               type="button"
               onClick={() => {
                 setTeams(archieveTeams)
+                setTitle('Archieved')
               }}
             >
               ArchieveTeams
@@ -71,7 +74,7 @@ const Teams = () => {
       <section className="content">
         <div className="teams__wrapper">
           <div className="teams__header">
-            <div className="teams__title">All teams</div>
+            <div className="teams__title">{title} teams</div>
             <div className="teams__info">
               Showing {teams.length} out of {teams.length} teams
             </div>
@@ -89,7 +92,12 @@ const Teams = () => {
                       </div>
                     </div>
                     <div className="teams__star">
-                      <img src="images/star default.svg" alt="" />
+                      <img
+                        src={
+                          team.is_favorited ? 'images/star active.svg' : 'images/star default.svg'
+                        }
+                        alt=""
+                      />
                     </div>
                   </div>
                   <div className="team__description">{team.description} </div>
@@ -99,7 +107,7 @@ const Teams = () => {
                       <div className="team__campaigns__info">{team.campaigns_count} Campaigns</div>
                     </div>
                     <div className="team__leads">
-                      <img src="images/icon-leads-small.svg" alt=""/>
+                      <img src="images/icon-leads-small.svg" alt="" />
                       <div className="team__leads__info">{team.leads_count} Leads</div>
                     </div>
                   </div>
