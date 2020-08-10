@@ -226,7 +226,7 @@ const config = {
     ),
     new MiniCssExtractPlugin({
       filename: 'css/main.css',
-      // chunkFilename: 'css/[id].css',
+      chunkFilename: 'css/[id].css',
       ignoreOrder: false
     }),
     new webpack.DefinePlugin(

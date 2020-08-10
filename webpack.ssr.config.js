@@ -202,7 +202,7 @@ const config = {
     new StringReplacePlugin(),
     new MiniCssExtractPlugin({
       filename: 'css/ssr/[name].css',
-      // chunkFilename: 'css/ssr/[id].css',
+      chunkFilename: 'css/ssr/[id].css',
       ignoreOrder: false
     }),
     new webpack.DefinePlugin({
