@@ -57,6 +57,9 @@
   mix-blend-mode: normal;
   opacity: 0.5;
 }
+.header__right__msg {
+  cursor: pointer;
+}
 .header__right__icon {
   padding-top: 18px;
   padding-left: 8px;
