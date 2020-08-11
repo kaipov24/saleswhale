@@ -27,8 +27,8 @@ const config = {
     ]
   },
   entry: {
-    main: './main.js',
-    root: './config/root.js'
+    main: './main.js'
+    // root: './config/root.js'
   }, // [('./main.js', './config/root.js')],
   resolve: {
     alias: {
