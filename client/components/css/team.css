@@ -173,6 +173,7 @@
   color: #FFFFFF;
   display: flex;
   padding: 10px 15px;
+  cursor: pointer;
 }
 
 .intro__inner__left {
