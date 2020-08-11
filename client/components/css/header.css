@@ -86,4 +86,5 @@
 
 .header__menu__item:hover{
   background-color: #2995DA;
+  cursor: pointer;
 }
