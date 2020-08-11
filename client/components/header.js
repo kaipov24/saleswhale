@@ -19,7 +19,7 @@ const Header = () => {
               <div className="header__subtitle">Teams</div>
             </div>
             <div className="header__right">
-              <div>
+              <div className="header__right__msg">
                 <img src="images/menu notification.svg" alt="notification" />
               </div>
               <div className="header__right__text">Hello, {it.name}</div>
